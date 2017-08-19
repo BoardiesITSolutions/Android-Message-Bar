@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MessageBarExample</string>
+    <string name="action_settings">Settings</string>
+    <string name="show_default_message_bar_auto_hide">Show Default Message Bar (Auto Hide)</string>
+    <string name="android_message_bar_example">Android Message Bar Example</string>
+    <string name="show_default_message_bar_auto_hide_disabled">Show Default Message Bar (Auto hide disabled)</string>
+    <string name="message_bar_hiding_button">Message Bar hiding button</string>
+    <string name="show_and_use_button_callback">Show and use button callback</string>
+    <string name="set_message_bar_background_to_be_apps_primary_colour">Set message bar background to be apps primary colour</string>
+</resources>

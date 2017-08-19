@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout android:id="@+id/container"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:text="@string/android_message_bar_example"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <Button android:id="@+id/btnShowWithAutoHide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_default_message_bar_auto_hide"/>
+        <Button android:id="@+id/btnShowAutoHideDisabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_default_message_bar_auto_hide_disabled"/>
+        <Button android:id="@+id/btnShowHidingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/message_bar_hiding_button"/>
+        <Button android:id="@+id/btnShowWithButtonCallBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_and_use_button_callback"/>
+        <Button android:id="@+id/btnShowPrimaryBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/set_message_bar_background_to_be_apps_primary_colour"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/logo"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Boardies IT Solutions"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="(C) Copyright - Boardies IT Solutions 2017"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
