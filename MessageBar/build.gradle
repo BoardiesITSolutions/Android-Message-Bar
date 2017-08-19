@@ -1,0 +1,61 @@
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+        'com.android.tools.build:gradle:2.3.3'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+archivesBaseName="MessageBar"
+version '1.0'
+group 'com.BoardiesITSolutions'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    android.libraryVariants
+
+    libraryVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.aar')) {
+                def fileName = "${archivesBaseName}-${version}.aar"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:26.0.0-beta2'
+    compile 'com.android.support:support-v4:26.0.0-beta2'
+    compile 'com.android.support:design:26.0.0-beta2'
+}

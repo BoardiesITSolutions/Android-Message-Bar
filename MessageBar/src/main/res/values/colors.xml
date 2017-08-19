@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="messageBar_Background">#171111</color>
+    <color name="messageBar_TextColor">#E5C206</color>
+    <color name="messageBar_ButtonTextColor">#2c2fe2</color>
+</resources>

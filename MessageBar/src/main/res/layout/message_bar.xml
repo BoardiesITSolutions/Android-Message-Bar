@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/messageBar_Background"
+    android:layout_alignParentBottom="true"
+    android:paddingStart="10dp"
+    android:paddingLeft="10dp"
+    android:gravity="center_vertical"
+    android:minHeight="48dp">
+    <TextView android:id="@+id/message_text"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/messageBar_TextColor"/>
+    <Button android:id="@+id/message_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/messageBar_ButtonTextColor"
+        android:text="@string/dismiss"
+        android:layout_gravity="end"
+        android:gravity="center_vertical"
+        style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>
