@@ -218,7 +218,7 @@ public class MessageBar extends RelativeLayout
     /**
      * Animate the hiding of the message bar so that it fades out.
      */
-    private void hideMessage()
+    public void hideMessage()
     {
         this.animate().setDuration(1000).alpha(0).setListener(new AnimatorListenerAdapter()
         {
