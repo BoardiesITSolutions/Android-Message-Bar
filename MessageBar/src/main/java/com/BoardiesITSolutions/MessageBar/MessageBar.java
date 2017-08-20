@@ -160,7 +160,7 @@ public class MessageBar extends RelativeLayout
      * @param iMessageBar The call back interface, this allows you to receive a click callback when the message button is clicked
      * @throws Exception If an invalid activity class has been passed to constructor. You do not need to catch this yourself, it will catch internally and log the error to the logcat
      */
-    public void show(String message, boolean disableAutoHide, IMessageBar iMessageBar) throws Exception
+    private void show(String message, boolean disableAutoHide, IMessageBar iMessageBar) throws Exception
     {
         this.txtMessage.setText(message);
         this.iMessageBar = iMessageBar;
