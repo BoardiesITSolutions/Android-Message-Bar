@@ -1,5 +1,5 @@
 [![](https://jitpack.io/v/BoardiesITSolutions/Android-Message-Bar.svg)](https://jitpack.io/#BoardiesITSolutions/Android-Message-Bar)
-[Chat to us on Slack](https://join.slack.com/t/androidmessagebar/shared_invite/MjI5OTkwODY1MDMwLTE1MDMyMzk1MTYtMDkwNzI2OTkxOA)
+[Chat to us on Slack](https://join.slack.com/t/boardiesitsolutions/shared_invite/enQtMjQ2MTQ2OTIzOTI1LTJkYjQ5Zjc1ZjZmNDQ0MGQ3ZjM1NDFlZTI5ZmE3NjQ1ZjRkOTQ1NTliMmI0ZTMyOTViNWJkMWQ0NWUyM2Q2MjQ)
 
 # Android-Message-Bar
 Simple and lightweight Message Bar Notification
