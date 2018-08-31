@@ -10,7 +10,7 @@ buildscript {
 apply plugin: 'com.android.library'
 
 archivesBaseName="MessageBar"
-version '1.1'
+version '1.4'
 group 'com.BoardiesITSolutions'
 
 android {
@@ -19,8 +19,8 @@ android {
     defaultConfig {
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 2
-        versionName "1.1"
+        versionCode 3
+        versionName "1.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
