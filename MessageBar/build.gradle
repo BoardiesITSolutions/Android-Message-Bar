@@ -10,7 +10,7 @@ buildscript {
 apply plugin: 'com.android.library'
 
 archivesBaseName="MessageBar"
-version '1.4'
+version '1.5'
 group 'com.BoardiesITSolutions'
 
 android {
@@ -19,8 +19,8 @@ android {
     defaultConfig {
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 3
-        versionName "1.4"
+        versionCode 5
+        versionName "1.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -32,8 +32,8 @@ android {
 
     android.libraryVariants
 
-    /*libraryVariants.all { variant ->
-        variant.outputs.each { output ->
+    libraryVariants.all { variant ->
+        variant.outputs.all { output ->
             def outputFile = output.outputFile
             if (outputFile != null && outputFile.name.endsWith('.aar')) {
                 def fileName = "${archivesBaseName}-${version}.aar"
@@ -41,7 +41,7 @@ android {
                 outputFileName = fileName
             }
         }
-    }*/
+    }
 
     lintOptions {
         abortOnError false
